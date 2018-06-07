@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% load my_custom_template %}
+
+{% block title %}
+Index Page
+{% endblock %}
+
+{% block body %}
+
+This is the used of a custom tag.
+<br>
+
+{% ass_tag "hello world!" as hello %}
+
+<div style="color:blue;">
+    {{hello}}
+</div>
+
+{% endblock %}
